@@ -1,0 +1,11 @@
+.profile__item-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  box-shadow: none;
+  border: solid 2px #fff;
+  cursor: pointer;
+  padding-block: 15px;
+}

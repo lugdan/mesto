@@ -1,0 +1,9 @@
+.profile__item-heading-title {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 33px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}

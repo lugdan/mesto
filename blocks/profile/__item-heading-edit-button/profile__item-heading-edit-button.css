@@ -1,0 +1,13 @@
+.profile__item-heading-edit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 18px;
+  min-width: 18px;
+  min-height: 18px;
+  padding-bottom: 8px;
+  background: none;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
