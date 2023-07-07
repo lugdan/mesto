@@ -1,24 +1,18 @@
-.profile__item-button {
-  width: 100%;
+.places__item-box-like-button {
   display: flex;
   justify-content: center;
   align-items: center;
   background: none;
   box-shadow: none;
-  border: solid 2px #fff;
+  border: none;
   cursor: pointer;
-  padding-block: 15px;
+  padding: 0;
+  margin: 0;
   transition: all 0.3s ease-in-out;
 }
 
-@media screen and (min-width: 1024px) {
-  .profile__item-button {
-    max-width: 150px;
-  }
-}
-
 @media screen and (hover: hover) and (pointer: fine) {
-  .profile__item-button:hover {
+  .places__item-box-like-button:hover {
     cursor: pointer;
     opacity: 0.6;
   }

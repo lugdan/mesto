@@ -5,3 +5,11 @@
   align-items: center;
   margin-bottom: 36px;
 }
+
+@media screen and (min-width: 1024px) {
+  .profile__item-heading {
+    margin-bottom: 0;
+    align-items: flex-start;
+    padding-left: 30px;
+  }
+}

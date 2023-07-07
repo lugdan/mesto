@@ -1,0 +1,27 @@
+.places__item-box-title {
+  max-width: 150px;
+  /* max-width: calc(100% - 28px - 15px); */
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29px;
+  text-align: left;
+  color: #000;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+  .places__item-box-title {
+    max-width: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .places__item-box-title {
+    max-width: 200px;
+  }
+}

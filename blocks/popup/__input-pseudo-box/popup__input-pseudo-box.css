@@ -1,0 +1,15 @@
+.popup__input-pseudo-box {
+  position: relative;
+  padding-bottom: 13px;
+  margin-bottom: 30px;
+}
+
+.popup__input-pseudo-box::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: #000;
+}

@@ -1,0 +1,11 @@
+.places__item-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 15px 31px 21px;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-sizing: border-box;
+  gap: 15px;
+}

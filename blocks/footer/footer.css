@@ -1,3 +1,12 @@
 .footer {
   width: 100%;
+  padding-top: 24px;
+  padding-bottom: 36px;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding-top: 34px;
+    padding-bottom: 60px;
+  }
 }

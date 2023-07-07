@@ -1,0 +1,29 @@
+.popup__close-button {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+  .popup__close-button {
+    top: -40px;
+    right: -40px;
+  }
+}
+
+@media screen and (hover: hover) and (pointer: fine) {
+  .popup__close-button:hover {
+    cursor: pointer;
+  }
+  .popup__close-button:hover .popup__close-button-img {
+    fill: rgba(255, 255, 255, 0.6);
+  }
+}

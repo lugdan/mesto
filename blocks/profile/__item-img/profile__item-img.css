@@ -8,3 +8,9 @@
   object-fit: fill;
   margin-bottom: 26px;
 }
+
+@media screen and (min-width: 1024px) {
+  .profile__item-img {
+    margin-bottom: 0;
+  }
+}
