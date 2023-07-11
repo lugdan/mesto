@@ -26,8 +26,6 @@
 @import url(../blocks/profile/__item-button-img/profile__item-button-img.css);
 
 @import url(../blocks/places/places.css);
-@import url(../blocks/places/__container/places__container.css);
-@import url(../blocks/places/__items/places__items.css);
 @import url(../blocks/places/__item/places__item.css);
 @import url(../blocks/places/__item-img/places__item-img.css);
 @import url(../blocks/places/__item-box/places__item-box.css);
