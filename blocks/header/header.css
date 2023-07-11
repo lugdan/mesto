@@ -35,6 +35,7 @@
   .header {
     padding-inline: clamp(19px, 16vw, 200px);
     padding-bottom: 41px;
+    padding-top: 45px;
   }
 
   .header::after {

@@ -22,6 +22,7 @@
 @media screen and (min-width: 1024px) {
   .places {
     padding-inline: clamp(19px, 16vw, 200px);
+    padding-top: 25px;
     padding-bottom: 33px;
   }
 }

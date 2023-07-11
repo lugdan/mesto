@@ -8,6 +8,14 @@
   margin: 0;
   max-width: 100%;
   text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 1024px) {
+  .profile__item-heading-title {
+    font-size: 42px;
+    line-height: 48px;
+    text-align: left;
+  }
 }

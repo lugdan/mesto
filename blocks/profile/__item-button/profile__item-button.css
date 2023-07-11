@@ -7,7 +7,7 @@
   box-shadow: none;
   border: solid 2px #fff;
   cursor: pointer;
-  padding-block: 15px;
+  padding-block: 13px;
   transition: all 0.3s ease-in-out;
   outline: none;
 }
@@ -15,6 +15,7 @@
 @media screen and (min-width: 1024px) {
   .profile__item-button {
     max-width: 150px;
+    padding-block: 12px;
   }
 }
 

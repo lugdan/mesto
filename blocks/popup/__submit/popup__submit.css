@@ -24,3 +24,11 @@
     background: rgba(0, 0, 0, 0.8);
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .popup__submit {
+    min-height: 50px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
