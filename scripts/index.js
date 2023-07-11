@@ -4,6 +4,7 @@ const popupOpenButton = document.querySelector(
 );
 const popupCloseButton = document.querySelector(".popup__close-button");
 const popupSubmitFormButton = document.querySelector(".popup__submit");
+const popupForm = document.querySelector(".popup__form");
 
 function popupClassToggle(event) {
   popup.classList.toggle("popup_openeded");
@@ -37,4 +38,4 @@ const closeModalByClickToOverlay = function (event) {
 popupOpenButton.addEventListener("click", popupClassToggle);
 popupCloseButton.addEventListener("click", popupClassToggle);
 popupSubmitFormButton.addEventListener("click", popupClassToggle);
-popup.addEventListener("click", closeModalByClickToOverlay);
+popupForm.addEventListener("submit", closeModalByClickToOverlay);
