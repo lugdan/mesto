@@ -16,15 +16,15 @@ function popupClassToggle(event) {
       ".profile__item-heading-subtitle"
     ).textContent;
 
-    document.querySelector(".popup__input_name").value = personName;
-    document.querySelector(".popup__input_activity").value = personProfile;
+    document.querySelector(".popup__input_type_name").value = personName;
+    document.querySelector(".popup__input_type_activity").value = personProfile;
   }
 
   if (event.currentTarget == popupSubmitFormButton) {
     document.querySelector(".profile__item-heading-title").textContent =
-      document.querySelector(".popup__input_name").value;
+      document.querySelector(".popup__input_type_name").value;
     document.querySelector(".profile__item-heading-subtitle").textContent =
-      document.querySelector(".popup__input_activity").value;
+      document.querySelector(".popup__input_type_activity").value;
   }
 }
 
