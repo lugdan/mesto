@@ -34,17 +34,14 @@
 @import url(../blocks/places/__item-box-like-button-icon/places__item-box-like-button-icon.css);
 @import url(../blocks/places/__item-box-like-button-icon/_active/places__item-box-like-button-icon_active.css);
 
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__container-copyright/footer__container-copyright.css);
+
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/__container/popup__container.css);
 @import url(../blocks/popup/__title/popup__title.css);
 @import url(../blocks/popup/__form/popup__form.css);
 @import url(../blocks/popup/__input/popup__input.css);
-@import url(../blocks/popup/__input/_type_name/popup__input_type_name.css);
-@import url(../blocks/popup/__input/_type_activity/popup__input_type_activity.css);
 @import url(../blocks/popup/__submit/popup__submit.css);
 @import url(../blocks/popup/__close-button/popup__close-button.css);
 @import url(../blocks/popup/__close-button-img/popup__close-button-img.css);
-
-@import url(../blocks/footer/footer.css);
-@import url(../blocks/footer/__container/footer__container.css);
-@import url(../blocks/footer/__container-copyright/footer__container-copyright.css);

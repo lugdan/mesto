@@ -21,6 +21,13 @@
 
 @media screen and (min-width: 1024px) {
   .places {
+    padding-inline: clamp(19px, 16vw, 200px);
+    padding-bottom: 33px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .places {
     grid-template-columns: repeat(3, minmax(282px, 1fr));
     padding-inline: clamp(19px, 16vw, 200px);
     padding-bottom: 33px;
