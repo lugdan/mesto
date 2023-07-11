@@ -28,8 +28,8 @@
               />
               <div class="profile__item-heading">
                 <div class="profile__item-heading-container">
-                  <h2 class="profile__item-heading-title">Жак-Ив Кусто</h2>
-                  <button class="profile__item-heading-edit-button">
+                  <h1 class="profile__item-heading-title">Жак-Ив Кусто</h1>
+                  <button class="profile__item-heading-edit-button" type="button">
                     <img
                       src="./images/edit-button.svg"
                       alt="иконка для кнопки редактировать"
@@ -39,7 +39,7 @@
                 </div>
                 <p class="profile__item-heading-subtitle">Исследователь океана</p>
               </div>
-              <button class="profile__item-button">
+              <button class="profile__item-button" type="button">
                 <img
                   class="profile__item-button-img"
                   src="./images/plus-icon.svg"
@@ -54,13 +54,13 @@
             <div class="places__items">
               <div class="places__item">
                 <img
-                  src="./images/karachaevsk-image.png"
-                  alt=""
+                  src="./images/testImage.jpg"
+                  alt="картинка элемента"
                   class="places__item-img"
                 />
                 <div class="places__item-box">
                   <h2 class="places__item-box-title">Карачаевск</h2>
-                  <button class="places__item-box-like-button">
+                  <button class="places__item-box-like-button" type="button">
                     <img
                       class="places__item-box-like-button-icon places__item-box-like-button-icon_active"
                       src="./images/like-icon.svg"
@@ -72,12 +72,12 @@
               <div class="places__item">
                 <img
                   src="./images/elbrus-image.png"
-                  alt=""
+                  alt="картинка элемента"
                   class="places__item-img"
                 />
                 <div class="places__item-box">
                   <h2 class="places__item-box-title">Гора Эльбрус</h2>
-                  <button class="places__item-box-like-button">
+                  <button class="places__item-box-like-button" type="button">
                     <img
                       class="places__item-box-like-button-icon"
                       src="./images/like-icon.svg"
@@ -89,12 +89,12 @@
               <div class="places__item">
                 <img
                   src="./images/dombai-image.png"
-                  alt=""
+                  alt="картинка элемента"
                   class="places__item-img"
                 />
                 <div class="places__item-box">
                   <h2 class="places__item-box-title">Домбай</h2>
-                  <button class="places__item-box-like-button">
+                  <button class="places__item-box-like-button" type="button">
                     <img
                       class="places__item-box-like-button-icon places__item-box-like-button-icon_active"
                       src="./images/like-icon.svg"
@@ -106,12 +106,12 @@
               <div class="places__item">
                 <img
                   src="./images/karachaevsk-image.png"
-                  alt=""
+                  alt="картинка элемента"
                   class="places__item-img"
                 />
                 <div class="places__item-box">
                   <h2 class="places__item-box-title">Карачаево-Черкесия</h2>
-                  <button class="places__item-box-like-button">
+                  <button class="places__item-box-like-button" type="button">
                     <img
                       class="places__item-box-like-button-icon"
                       src="./images/like-icon.svg"
@@ -123,12 +123,12 @@
               <div class="places__item">
                 <img
                   src="./images/elbrus-image.png"
-                  alt=""
+                  alt="картинка элемента"
                   class="places__item-img"
                 />
                 <div class="places__item-box">
                   <h2 class="places__item-box-title">Гора Эльбрус</h2>
-                  <button class="places__item-box-like-button">
+                  <button class="places__item-box-like-button" type="button">
                     <img
                       class="places__item-box-like-button-icon"
                       src="./images/like-icon.svg"
@@ -140,12 +140,12 @@
               <div class="places__item">
                 <img
                   src="./images/dombai-image.png"
-                  alt=""
+                  alt="картинка элемента"
                   class="places__item-img"
                 />
                 <div class="places__item-box">
                   <h2 class="places__item-box-title">Домбай</h2>
-                  <button class="places__item-box-like-button">
+                  <button class="places__item-box-like-button" type="button">
                     <img
                       class="places__item-box-like-button-icon"
                       src="./images/like-icon.svg"
@@ -157,45 +157,34 @@
             </div>
           </section>
         </div>
-        <div class="popup">
-          <section class="popup__container">
-            <h2 class="popup__title">Редактировать профиль</h2>
-            <form class="popup__form" action="#">
-              <input
-                class="popup__input popup__input_name"
-                type="text"
-                value="12312312"
-              />
-              <input
-                class="popup__input popup__input_activity"
-                type="text"
-                value="3123123"
-              />
-              <button class="popup__submit" type="submit">Сохранить</button>
-            </form>
-            <button class="popup__close-button">
-              <!-- <svg
-                class="popup__close-button-img"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  id="Close Icon"
-                  d="M20 18L12 10L20 2L18 0L10 8L2 0L0 2L8 10L0 18L2 20L10 12L18 20L20 18Z"
-                />
-              </svg> -->
-              <img class="popup__close-button-img" src="./images/close-Icon.svg" alt="иконка закрытия всплывающего окна">
-            </button>
-          </section>
-        </div>
       </main>
       <footer class="footer">
         <section class="footer__container">
           <p class="footer__container-copyright">© 2020 Mesto Russia</p>
         </section>
       </footer>
+      <div class="popup">
+        <div class="popup__container">
+          <h2 class="popup__title">Редактировать профиль</h2>
+          <form class="popup__form" action="#" name="popup-form">
+            <input
+              class="popup__input popup__input_name"
+              type="text"
+              value="12312312"
+            />
+            <input
+              class="popup__input popup__input_activity"
+              type="text"
+              value="3123123"
+            />
+            <button class="popup__submit" type="submit">Сохранить</button>
+          </form>
+          <button class="popup__close-button" type="button">
+            <img class="popup__close-button-img" src="./images/close-Icon.svg" alt="иконка закрытия всплывающего окна">
+          </button>
+        </в>
+      </div>
     </div>
-    <script src="scripts/script.js"></script>
+    <script src="scripts/index.js"></script>
   </body>
 </html>

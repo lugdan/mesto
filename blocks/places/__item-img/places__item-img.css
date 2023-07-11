@@ -3,4 +3,13 @@
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  min-height: 282px;
+  max-height: 282px;
+}
+
+@media (min-width: 1024px) {
+  .places__item-img {
+    min-height: 361px;
+    max-height: 361px;
+  }
 }
