@@ -8,4 +8,7 @@
   border-bottom: 1px solid #000;
   padding-bottom: 13px;
   outline: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
