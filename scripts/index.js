@@ -8,12 +8,14 @@ function popupClassToggle(event) {
   popup.classList.toggle("popup_opened");
 
   if (popup.classList.contains("popup_opened")) {
-    const personName = document.querySelector(
-      ".profile__heading-title"
-    ).textContent;
-    const personProfile = document.querySelector(
-      ".profile__heading-subtitle"
-    ).textContent;
+    const personName = document
+      .querySelector(".profile__heading-title")
+      .textContent.trimStart()
+      .trimEnd();
+    const personProfile = document
+      .querySelector(".profile__heading-subtitle")
+      .textContent.trimStart()
+      .trimEnd();
 
     document.querySelector(".popup__input_type_name").value = personName;
     document.querySelector(".popup__input_type_activity").value = personProfile;
