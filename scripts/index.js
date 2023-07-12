@@ -7,9 +7,9 @@ const popupSubmitFormButton = document.querySelector(".popup__submit");
 const popupForm = document.querySelector(".popup__form");
 
 function popupClassToggle(event) {
-  popup.classList.toggle("popup_openeded");
+  popup.classList.toggle("popup_opened");
 
-  if (popup.classList.contains("popup_openeded")) {
+  if (popup.classList.contains("popup_opened")) {
     const personName = document.querySelector(
       ".profile__item-heading-title"
     ).textContent;
@@ -20,13 +20,6 @@ function popupClassToggle(event) {
     document.querySelector(".popup__input_type_name").value = personName;
     document.querySelector(".popup__input_type_activity").value = personProfile;
   }
-
-  if (event.currentTarget == popupSubmitFormButton) {
-    document.querySelector(".profile__item-heading-title").textContent =
-      document.querySelector(".popup__input_type_name").value;
-    document.querySelector(".profile__item-heading-subtitle").textContent =
-      document.querySelector(".popup__input_type_activity").value;
-  }
 }
 
 const closeModalByClickToOverlay = function (event) {
@@ -35,7 +28,18 @@ const closeModalByClickToOverlay = function (event) {
   }
 };
 
+function formSubmit(event) {
+  event.preventDefault();
+
+  document.querySelector(".profile__item-heading-title").textContent =
+    document.querySelector(".popup__input_type_name").value;
+  document.querySelector(".profile__item-heading-subtitle").textContent =
+    document.querySelector(".popup__input_type_activity").value;
+
+  popup.classList.toggle("popup_opened");
+}
+
+popup.addEventListener("click", closeModalByClickToOverlay);
 popupOpenButton.addEventListener("click", popupClassToggle);
 popupCloseButton.addEventListener("click", popupClassToggle);
-popupSubmitFormButton.addEventListener("click", popupClassToggle);
-popupForm.addEventListener("submit", closeModalByClickToOverlay);
+popupForm.addEventListener("submit", formSubmit);

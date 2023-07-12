@@ -1,6 +1,6 @@
 .popup__close-button {
   position: absolute;
-  top: -30px;
+  top: -36px;
   right: 0;
   display: flex;
   justify-content: center;
@@ -23,8 +23,5 @@
 @media screen and (hover: hover) and (pointer: fine) {
   .popup__close-button:hover {
     cursor: pointer;
-  }
-  .popup__close-button:hover .popup__close-button-img {
-    fill: rgba(255, 255, 255, 0.6);
   }
 }
