@@ -1,4 +1,4 @@
-.profile__item-button-img {
+.profile__button-img {
   min-width: 16px;
   max-width: 16px;
   min-height: 16px;
@@ -6,7 +6,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .profile__item-button-img {
+  .profile__button-img {
     min-width: 22px;
     max-width: 22px;
     min-height: 22px;

@@ -1,7 +1,5 @@
 const popup = document.querySelector(".popup");
-const popupOpenButton = document.querySelector(
-  ".profile__item-heading-edit-button"
-);
+const popupOpenButton = document.querySelector(".profile__heading-edit-button");
 const popupCloseButton = document.querySelector(".popup__close-button");
 const popupSubmitFormButton = document.querySelector(".popup__submit");
 const popupForm = document.querySelector(".popup__form");
@@ -11,10 +9,10 @@ function popupClassToggle(event) {
 
   if (popup.classList.contains("popup_opened")) {
     const personName = document.querySelector(
-      ".profile__item-heading-title"
+      ".profile__heading-title"
     ).textContent;
     const personProfile = document.querySelector(
-      ".profile__item-heading-subtitle"
+      ".profile__heading-subtitle"
     ).textContent;
 
     document.querySelector(".popup__input_type_name").value = personName;
@@ -31,9 +29,9 @@ const closeModalByClickToOverlay = function (event) {
 function formSubmit(event) {
   event.preventDefault();
 
-  document.querySelector(".profile__item-heading-title").textContent =
+  document.querySelector(".profile__heading-title").textContent =
     document.querySelector(".popup__input_type_name").value;
-  document.querySelector(".profile__item-heading-subtitle").textContent =
+  document.querySelector(".profile__heading-subtitle").textContent =
     document.querySelector(".popup__input_type_activity").value;
 
   popup.classList.toggle("popup_opened");

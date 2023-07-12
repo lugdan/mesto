@@ -1,4 +1,4 @@
-.profile__item-heading-edit-button {
+.profile__heading-edit-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,14 +16,14 @@
 }
 
 @media screen and (hover: hover) and (pointer: fine) {
-  .profile__item-heading-edit-button:hover {
+  .profile__heading-edit-button:hover {
     cursor: pointer;
     opacity: 0.6;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .profile__item-heading-edit-button {
+  .profile__heading-edit-button {
     max-width: 24px;
     min-width: 24px;
     min-height: 24px;

@@ -1,4 +1,4 @@
-.profile__item-heading-edit-button-icon {
+.profile__heading-edit-button-icon {
   width: 100%;
   object-fit: contain;
   max-width: 18px;
@@ -9,7 +9,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .profile__item-heading-edit-button-icon {
+  .profile__heading-edit-button-icon {
     max-width: 24px;
     min-width: 24px;
     min-height: 24px;

@@ -1,4 +1,4 @@
-.profile__item-heading-container {
+.profile__heading-container {
   display: flex;
   gap: 10px;
   align-items: flex-end;
@@ -6,7 +6,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .profile__item-heading-container {
+  .profile__heading-container {
     margin-bottom: 10px;
     gap: 18px;
   }

@@ -1,4 +1,4 @@
-.profile__item-button {
+.profile__button {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -14,14 +14,14 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .profile__item-button {
+  .profile__button {
     max-width: 150px;
     padding-block: 12px;
   }
 }
 
 @media screen and (hover: hover) and (pointer: fine) {
-  .profile__item-button:hover {
+  .profile__button:hover {
     cursor: pointer;
     opacity: 0.6;
   }

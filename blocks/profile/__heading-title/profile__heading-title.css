@@ -1,4 +1,4 @@
-.profile__item-heading-title {
+.profile__heading-title {
   font-family: "Inter", Arial, sans-serif;
   font-size: 27px;
   font-weight: 500;
@@ -13,7 +13,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .profile__item-heading-title {
+  .profile__heading-title {
     font-size: 42px;
     line-height: 48px;
     text-align: left;
