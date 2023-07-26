@@ -1,0 +1,12 @@
+.places__item-delete-img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+@media screen and (hover: hover) and (pointer: fine) {
+  .places__item-delete-img:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+}

@@ -49,7 +49,7 @@
         </section>
         <section>
           <ul class="places">
-            <li class="places__item">
+            <!-- <li class="places__item">
               <img
                 src="./images/testImage.jpg"
                 alt="картинка элемента"
@@ -132,14 +132,14 @@
                   type="button"
                 ></button>
               </div>
-            </li>
+            </li> -->
           </ul>
         </section>
       </main>
       <footer class="footer">
         <p class="footer__container-copyright">© 2020 Mesto Russia</p>
       </footer>
-      <div class="popup">
+      <div class="popup popup_person-edit">
         <div class="popup__container">
           <h2 class="popup__title">Редактировать профиль</h2>
           <form class="popup__form" action="#" name="popup-form">
@@ -166,7 +166,52 @@
           </button>
         </div>
       </div>
+      <div class="popup popup_add-place">
+        <div class="popup__container">
+          <h2 class="popup__title">Новое место</h2>
+          <form
+            class="popup__form popup__form_add-place"
+            action="#"
+            name="popup-form"
+          >
+            <input
+              class="popup__input popup__input_type_place-name"
+              name="popupNameInput"
+              type="text"
+              value="12312312"
+            />
+            <input
+              class="popup__input popup__input_type_place-img"
+              name="popupActivityInput"
+              type="text"
+              value="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg"
+            />
+            <button class="popup__submit" type="submit">Создать</button>
+          </form>
+          <button class="popup__close-button" type="button">
+            <img
+              class="popup__close-button-img"
+              src="./images/close-Icon.svg"
+              alt="иконка закрытия всплывающего окна"
+            />
+          </button>
+        </div>
+      </div>
     </div>
+    <template class="card-template">
+      <li class="places__item">
+        <img
+          class="places__item-delete-img"
+          src="./images/trash.svg"
+          alt="картинка удаления места"
+        />
+        <img src="" alt="картинка элемента" class="places__item-img" />
+        <div class="places__item-box">
+          <h2 class="places__item-box-title"></h2>
+          <button class="places__item-box-like-button" type="button"></button>
+        </div>
+      </li>
+    </template>
     <script src="scripts/index.js"></script>
   </body>
 </html>
