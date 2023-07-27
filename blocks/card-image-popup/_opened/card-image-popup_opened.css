@@ -1,0 +1,4 @@
+.card-image-popup_opened {
+  display: flex;
+  opacity: 1;
+}

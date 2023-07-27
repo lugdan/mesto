@@ -1,5 +1,6 @@
 const popup = document.querySelector(".popup_person-edit");
 const popupAddPlace = document.querySelector(".popup_add-place");
+const popupBigImage = document.querySelector(".card-image-popup");
 
 const popupOpenButton = document.querySelector(".profile__heading-edit-button");
 const popupCloseButton = document.querySelectorAll(".popup__close-button");
@@ -11,6 +12,10 @@ const popupAddPlaceOpenButton = document.querySelector(".profile__button");
 const placesCards = document.querySelector(".places");
 const placesCardsTemplate = document.querySelector(".card-template");
 const popupFormAddPlace = document.querySelector(".popup__form_add-place");
+
+const popupBigImageCloseButton = document.querySelector(
+  ".card-image-popup__close-button"
+);
 
 const initialCards = [
   {
@@ -54,6 +59,9 @@ const placesCreateElByTemplate = (obj) => {
   el.querySelector(".places__item-delete-img").addEventListener(
     "click",
     placesCardDelete
+  );
+  el.querySelector(".places__item-img").addEventListener("click", () =>
+    shownImagePopup(obj.link, obj.name)
   );
 
   return el;
@@ -104,6 +112,10 @@ function closePopup(event) {
   popupClassToggle(closeButtonPopup);
 }
 
+function closeBigImagePopup() {
+  popupBigImage.classList.toggle("card-image-popup_opened");
+}
+
 function popupPlaceAdd(event) {
   popupClassToggle(popupAddPlace);
 }
@@ -111,6 +123,11 @@ function popupPlaceAdd(event) {
 const closeModalByClickToOverlay = function (event) {
   if (event.target == event.currentTarget) {
     popupClassToggle(event.target);
+  }
+};
+const closeBigImageModalByClickToOverlay = function (event) {
+  if (event.target == event.currentTarget) {
+    closeBigImagePopup();
   }
 };
 
@@ -134,6 +151,15 @@ function addPlacesFormSubmit(event) {
   popupClassToggle(popupAddPlace);
 }
 
+function shownImagePopup(link, name) {
+  popupBigImage.classList.toggle("card-image-popup_opened");
+
+  popupBigImage.querySelector(".card-image-popup__main-image").src = link;
+  popupBigImage.querySelector(
+    ".card-image-popup__main-image-name"
+  ).textContent = name;
+}
+
 popup.addEventListener("click", closeModalByClickToOverlay);
 popupOpenButton.addEventListener("click", popupPersonEdit);
 
@@ -146,4 +172,5 @@ popupFormAddPlace.addEventListener("submit", addPlacesFormSubmit);
 popupAddPlace.addEventListener("click", closeModalByClickToOverlay);
 popupAddPlaceOpenButton.addEventListener("click", popupPlaceAdd);
 
-// addEventListener("click", placesCardLikeButtonToggle);
+popupBigImageCloseButton.addEventListener("click", closeBigImagePopup);
+popupBigImage.addEventListener("click", closeBigImageModalByClickToOverlay);
