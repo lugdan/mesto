@@ -62,13 +62,11 @@
               class="popup__input popup__input_type_name"
               name="popupNameInput"
               type="text"
-              value="12312312"
             />
             <input
               class="popup__input popup__input_type_activity"
               name="popupActivityInput"
               type="text"
-              value="3123123"
             />
             <button class="popup__submit" type="submit">Сохранить</button>
           </form>
@@ -93,13 +91,11 @@
               class="popup__input popup__input_type_place-name"
               name="popupNameInput"
               type="text"
-              value="12312312"
             />
             <input
               class="popup__input popup__input_type_place-img"
               name="popupActivityInput"
               type="text"
-              value="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg"
             />
             <button class="popup__submit" type="submit">Создать</button>
           </form>
@@ -111,6 +107,23 @@
             />
           </button>
         </div>
+      </div>
+    </div>
+    <div class="popup popup_card-image">
+      <div class="popup__container popup__container_place_card-image">
+        <img
+          class="popup__main-image"
+          src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg"
+          alt="фотография места"
+        />
+        <button class="popup__close-button" type="button">
+          <img
+            class="popup__close-button-img"
+            src="./images/close-Icon.svg"
+            alt="иконка закрытия"
+          />
+        </button>
+        <p class="popup__main-image-name">asdasdasdasdasdasdasdasdasd</p>
       </div>
     </div>
     <template class="card-template">
@@ -131,26 +144,7 @@
         </div>
       </li>
     </template>
-    <div class="card-image-popup">
-      <div class="card-image-popup__container">
-        <img
-          class="card-image-popup__main-image"
-          src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg"
-          alt="фотография места"
-        />
-        <button class="card-image-popup__close-button" type="button">
-          <img
-            class="card-image-popup__close-icon"
-            src="./images/close-Icon.svg"
-            alt="иконка закрытия"
-          />
-        </button>
-        <p class="card-image-popup__main-image-name">
-          asdasdasdasdasdasdasdasdasd
-        </p>
-      </div>
-    </div>
-
+    <script src="scripts/initialCards.js"></script>
     <script src="scripts/index.js"></script>
   </body>
 </html>

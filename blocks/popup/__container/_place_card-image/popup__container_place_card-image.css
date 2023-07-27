@@ -1,0 +1,15 @@
+.popup__container_place_card-image {
+  max-width: 75vw;
+  align-items: flex-start;
+  padding: 0;
+  box-shadow: unset;
+  border-radius: unset;
+  background: unset;
+  gap: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .popup__container_place_card-image {
+    max-width: 820px;
+  }
+}
