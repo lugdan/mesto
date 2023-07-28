@@ -57,6 +57,15 @@
       <div class="popup popup_person-edit">
         <div class="popup__container">
           <h2 class="popup__title">Редактировать профиль</h2>
+
+          <button class="popup__close-button" type="button">
+            <img
+              class="popup__close-button-img"
+              src="./images/close-Icon.svg"
+              alt="иконка закрытия всплывающего окна"
+            />
+          </button>
+          <!-- кнопка лежил в теле попапа специально чтобы ее можно было правильно абсолютно позиционировать,сам тег попап это затенение фона,который расширяется на весь экран, переставил очередность детей popup__container для наглядности(во всех попапах) -->
           <form class="popup__form" action="#" name="popup-form">
             <input
               class="popup__input popup__input_type_name"
@@ -70,6 +79,12 @@
             />
             <button class="popup__submit" type="submit">Сохранить</button>
           </form>
+        </div>
+      </div>
+      <div class="popup popup_add-place">
+        <div class="popup__container">
+          <h2 class="popup__title">Новое место</h2>
+
           <button class="popup__close-button" type="button">
             <img
               class="popup__close-button-img"
@@ -77,11 +92,7 @@
               alt="иконка закрытия всплывающего окна"
             />
           </button>
-        </div>
-      </div>
-      <div class="popup popup_add-place">
-        <div class="popup__container">
-          <h2 class="popup__title">Новое место</h2>
+
           <form
             class="popup__form popup__form_add-place"
             action="#"
@@ -99,13 +110,6 @@
             />
             <button class="popup__submit" type="submit">Создать</button>
           </form>
-          <button class="popup__close-button" type="button">
-            <img
-              class="popup__close-button-img"
-              src="./images/close-Icon.svg"
-              alt="иконка закрытия всплывающего окна"
-            />
-          </button>
         </div>
       </div>
     </div>

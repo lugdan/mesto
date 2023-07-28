@@ -6,28 +6,13 @@
   position: fixed;
   display: none;
   opacity: 0;
+  visibility: hidden;
   justify-content: center;
   align-items: center;
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.5);
-  transition: all 0.3s ease-in-out;
-  animation: fadeInFromNone 0.3s;
-}
-
-@keyframes fadeInFromNone {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-
-  1% {
-    display: flex;
-    opacity: 0;
-  }
-
-  100% {
-    display: flex;
-    opacity: 1;
-  }
+  transition: all 10s linear;
+  /* transition: visibility 0.3s linear, opacity 10s linear; */
+  /* я высталвлял транзинш и на 0.3s и на 10s разницы никакой не заметил.На визабилити транзишн работать не должен(судя по некоторым темам стаковерфлоу) появление такое же резкое. Без анимации не работает. даже если применить прозрачность,все равно не работатет. разный транзишн дял визабилити и опасити не работает тоже*/
 }
