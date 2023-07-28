@@ -133,6 +133,8 @@ function addPlacesFormSubmit(event) {
   const nodeElement = placesCreateElByTemplate(el);
   placesCards.prepend(nodeElement);
   popupClassToggle(popupAddPlace);
+  inputPlaceNamePopup.value = "";
+  inputPlaceImagePopup.value = "";
 }
 
 function shownImagePopup(link, name) {
